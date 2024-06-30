@@ -4,14 +4,8 @@ import { QueryPagination } from "@/components/query-pagination";
 import { Tag } from "@/components/tag";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { getAllTags, sortPosts, sortTagsByCount } from "@/lib/utils";
-import { Metadata } from "next";
 import Link from "next/link";
 import { FaLongArrowAltLeft } from "react-icons/fa";
-
-export const metadata: Metadata = {
-  title: "My blog",
-  description: "This is a description",
-};
 
 const POSTS_PER_PAGE = 5;
 

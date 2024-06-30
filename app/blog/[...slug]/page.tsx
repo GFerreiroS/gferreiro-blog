@@ -4,7 +4,6 @@ import { notFound } from "next/navigation";
 
 import "@/styles/mdx.css";
 import { Metadata } from "next";
-import { siteConfig } from "@/config/site";
 import { Tag } from "@/components/tag";
 interface PostPageProps {
   params: {
@@ -34,7 +33,7 @@ export async function generateMetadata({
   return {
     title: post.title,
     description: post.description,
-    authors: { name: siteConfig.author },
+    authors: { name: "GFerreiro" },
     openGraph: {
       title: post.title,
       description: post.description,

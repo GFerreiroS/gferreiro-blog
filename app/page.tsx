@@ -15,7 +15,7 @@ export default function Home() {
               Gabriel Ferreiro
             </h1>
             <p className="max-w-[42rem] mx-auto text-muted-foreground sm:text-xl text-balance">
-              Welcome to my blog. I'm Paella or GFerreiro in most places on the internet. I'm a dev, docker enthusiast and a gamer. 
+              Welcome to my blog. I&apos;m Paella or GFerreiro in most places on the internet. I&apos;m a dev, docker enthusiast and a gamer. 
             </p>
             <div className="flex flex-col gap-4 justify-center sm:flex-row">
               <Link

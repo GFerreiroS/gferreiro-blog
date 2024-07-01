@@ -32,14 +32,14 @@ export default async function BlogPage({ searchParams }: BlogPageProps) {
     <div className="container max-w-4xl py-6 lg:py-10">
       <Link href="/">
         <button className="bg-transparent border border-slate-600 text-slate-600 px-4 py-2 rounded hover:bg-violet-900 hover:text-white transition-all duration-300">
-          <FaLongArrowAltLeft className="text-2xl" />
+          Go back
         </button>
       </Link>
       <div className="flex flex-col items-start gap-4 md:flex-row md:justify-between md:gap-8 pb-10 mt-10">
         <div className="flex-1 space-y-4">
           <h1 className="inline-block font-black text-4xl lg:text-5xl">Blog</h1>
           <p className="text-xl text-muted-foreground">
-            My ramblings on all things web dev.
+            My toughs about my passion
           </p>
         </div>
       </div>
@@ -68,7 +68,7 @@ export default async function BlogPage({ searchParams }: BlogPageProps) {
           )}
           <QueryPagination
             totalPages={totalPages}
-            className="justify-end mt-4"
+            className="justify-end mt-4 mb-10"
           />
         </div>
         <Card className="col-span-12 row-start-3 h-fit sm:col-span-4 sm:col-start-9 sm:row-start-1">

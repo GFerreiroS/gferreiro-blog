@@ -8,15 +8,14 @@ export default function Home() {
   const latestPosts = sortPosts(posts).slice(0, 5);
   return (
     <>
-      <div className="md:flex">
+      <div className="md:flex mb-10">
         <section className="mt-20 sm:pb-10">
           <div className="container flex flex-col gap-4 text-center">
             <h1 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-black text-balance">
-              Hello, I&apos;m James
+              Gabriel Ferreiro
             </h1>
             <p className="max-w-[42rem] mx-auto text-muted-foreground sm:text-xl text-balance">
-              Welcome to my blog template. Built using tailwind, shadcn, velite
-              and Nextjs 14.
+              Welcome to my blog. I'm Paella or GFerreiro in most places on the internet. I'm a dev, docker enthusiast and a gamer. 
             </p>
             <div className="flex flex-col gap-4 justify-center sm:flex-row">
               <Link
@@ -64,6 +63,7 @@ export default function Home() {
                 )
             )}
           </ul>
+          <p className="text-xs">I am not a big fan of paella</p>
         </section>
       </div>
     </>

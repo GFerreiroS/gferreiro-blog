@@ -1,6 +1,6 @@
 services:
   server:
-    container_name: bun
+    container_name: pnpm
     build:
       context: ./
       dockerfile: dockerfile

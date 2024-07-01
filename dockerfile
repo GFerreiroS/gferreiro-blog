@@ -1,15 +1,17 @@
-FROM oven/bun:1
+FROM node:lts-slim
+
+ENV PNPM_HOME="/app"
+ENV PATH="$PNPM_HOME:$PATH"
+RUN corepack enable
 
 WORKDIR /app
 
-COPY package.json .
+COPY . /app
 
-RUN bun install
+RUN pnpm install --prod --frozen-lockfile
 
-COPY . .
-
-RUN bun run build
+RUN pnpm run build
 
 EXPOSE 3000
 
-CMD [ "bun", "run", "start" ]
+CMD [ "pnpm", "start" ]
